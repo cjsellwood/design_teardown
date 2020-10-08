@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  --gray1: rgb(80, 80, 80);
+  --gray2: rgb(110, 110, 110);
+  --gray3: rgb(140, 140, 140);
+  --gray4: rgb(170, 170, 170);
+  --gray5: rgb(200, 200, 200);
+  --gray6: rgb(230, 230, 230);
+}
+
+.navbar {
+  height: 108px;
+  width: 100%;
+  padding: 16px 41px;
+  background-color: var(--gray5);
+  display: flex;
+  align-items: center;
+}
+
+.navbar > div {
+  height: 60%;
+  width: 8%;
+  margin: 10px;
+  background-color: var(--gray4);
+}
+
+div.header-icon {
+  width: 12%;
+}
+
+div.header-more {
+ background-color: var(--gray3);
+}
+
+div.header-search {
+  width: 22%;
+  background-color: var(--gray2);
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: calc(100vh - 108px);
+}
+
+.latest {
+  background-color: var(--gray6);
+}
+
+.latest-center {
+  background-color: var(--gray5);
+}
+
+.latest-outer div:first-child {
+  margin-top: 220px;
+}
+
+.main-heading {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin: 50px auto;
+  width: 70%;
+  color: transparent;
+}
+
+.main-heading > span {
+  background-color: var(--gray1);
+  line-height: 1.5;
+  padding: 15px;
+  text-align: center;
+}
+
+.article-author {
+  background-color: var(--gray3);
+  margin: 20px auto;
+  width: 70%;
+  height: 10%;
+}
+
+.article-title {
+  background-color: var(--gray2);
+  margin: 20px auto;
+  width: 70%;
+  height: 20%;
+}
+
+.article-other {
+  background-color: var(--gray4);
+  margin: 20px auto;
+  width: 70%;
+  height: 8%;
+}
+
+.more-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 710px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 25px;
+  padding: 30px 30px;
+  background-color: var(--gray6);
+}
+
+.more-title {
+  width: 90%;
+  height: 15%;
+  margin: 20px auto;
+  background-color: var(--gray3);
+}
+
+.more-text {
+  width: 90%;
+  height: 45%;
+  margin: 0 auto;
+  background-color: var(--gray4);
+}
+
+.supporters > div {
+  width: 70%;
+  height: 33%;
+  margin: 40px auto;
+  background-color: var(--gray3);
+  padding: 5%;
+}
+
+.supporters > div > div {
+  width: 90%;
+  height: 60%;
+  margin: 5% auto;
+  background-color: var(--gray4);
+}
+
+.supporters > div > button {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 20%;
+  margin: 5% auto;
+  display: block;
+  background-color: var(--gray2)
+}
+
+.promotion-banner {
+  grid-column: span 2;
+  background-color: var(--gray1);
+}
+
+.see-all-link {
+  padding: 50px 0;
+  background-color: var(--gray6);
+}
+
+.see-all-link > div{
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--gray4);
+}
